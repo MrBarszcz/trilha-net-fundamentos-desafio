@@ -10,6 +10,7 @@ Console.WriteLine("Seja bem vindo ao sistema de estacionamento!\n" +
                   "Digite o preço inicial:");
 precoInicial = Convert.ToDecimal(Console.ReadLine());
 
+Console.WriteLine("\n");
 Console.WriteLine("Agora digite o preço por hora:");
 precoPorHora = Convert.ToDecimal(Console.ReadLine());
 
@@ -20,8 +21,7 @@ string opcao = string.Empty;
 bool exibirMenu = true;
 
 // Realiza o loop do menu
-while (exibirMenu)
-{
+while (exibirMenu) {
     Console.Clear();
     Console.WriteLine("Digite a sua opção:");
     Console.WriteLine("1 - Cadastrar veículo");
@@ -48,12 +48,18 @@ while (exibirMenu)
             break;
 
         default:
+            Console.WriteLine("\n");
+
             Console.WriteLine("Opção inválida");
             break;
     }
+    
+    Console.WriteLine("\n");
 
     Console.WriteLine("Pressione uma tecla para continuar");
     Console.ReadLine();
 }
+
+Console.WriteLine("\n");
 
 Console.WriteLine("O programa se encerrou");
